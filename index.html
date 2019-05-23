@@ -14,6 +14,26 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background"></div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Populars tours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="logo" class="header__logo" />
@@ -31,7 +51,7 @@
     <main>
       <section class="section-about">
         <div class="u-center-text u-margin-botton-big">
-          <h2 class="heading-secundary">
+          <h2 class="heading-secondary">
             Exciting tours for adventurous people
           </h2>
         </div>
@@ -143,7 +163,7 @@
 
       <section class="section-tours">
         <div class="u-center-text u-margin-botton-big">
-          <h2 class="heading-secundary">
+          <h2 class="heading-secondary">
             most popular tours
           </h2>
         </div>
@@ -183,7 +203,7 @@
                     <p class="card__price-value">$297</p>
                   </div>
 
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -222,7 +242,7 @@
                     <p class="card__price-value">$497</p>
                   </div>
 
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -261,7 +281,7 @@
                     <p class="card__price-value">$897</p>
                   </div>
 
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -282,7 +302,7 @@
           </video>
         </div>
         <div class="u-center-text u-margin-botton-big">
-          <h2 class="heading-secundary">
+          <h2 class="heading-secondary">
             We make people genuinely happy
           </h2>
         </div>
@@ -348,7 +368,7 @@
           <div class="book">
             <div class="book__form">
               <div class="u-center-text u-margin-botton-medium">
-                <h2 class="heading-secundary">
+                <h2 class="heading-secondary">
                   Start booking now
                 </h2>
               </div>
@@ -442,12 +462,37 @@
           </div>
         </div>
         <div class="col-1-of-2">
-            <p class="footer__copyright">
-                Built my <a href="#" class="footer__link">Jonas Schmedtmann</a> for this online course <a href="#" class="footer__link">Advanced CSS and Sass</a>. Compyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
-            </p>
+          <p class="footer__copyright">
+            Built my <a href="#" class="footer__link">Jonas Schmedtmann</a> for
+            this online course
+            <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+            Compyright &copy; by Jonas Schmedtmann. You are 100% allowed to use
+            this webpage for both personal and commercial use, but NOT to claim
+            it as own design. A credit to the original author, Jonas
+            Schmedtmann, is of course highly appreciated!
+          </p>
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-botton-small">Start booking now</h2>
+          <h3 class="heading-tertiary u-margin-botton-small">Important &ndash; Please read these terms before booking</h3>
+          <p class="popup__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut quisquam omnis tenetur quis beatae laboriosam fugit ullam amet inventore tempora deserunt, porro mollitia ex officia velit dolore praesentium quasi?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ut quisquam omnis tenetur quis beatae laboriosam fugit ullam amet inventore tempora deserunt, porro mollitia ex officia velit dolore praesentium quasi?
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
     <!-- <section class="grid-test">
         <div class="row">
             <div class="col-1-of-2">
